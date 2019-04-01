@@ -5,9 +5,14 @@ public class Refactorizacion
 
 	public double calcularPrecio (int unidades,double precioUnitario) {
 		
+		double precioTotal;
+		double IVA;
 		
 		
-		return 0.0;
+		precioTotal=unidades*precioUnitario;
+		IVA=precioTotal*0.21;
+		
+		return precioTotal+IVA;
 		
 	}
 
